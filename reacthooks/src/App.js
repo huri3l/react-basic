@@ -6,7 +6,7 @@ import { Container, Typography } from "@material-ui/core";
 function App() {
   return (
     <Container component="article" maxWidth="sm">
-      <Typography variant="h3" align="center" component="h1">Formulário de cadastro</Typography>
+      <Typography variant="h3" component="h1">Formulário de cadastro</Typography>
       <FormularioCadastro />
     </Container>
   );

@@ -7,9 +7,18 @@ import {
 } from "@material-ui/core/";
 
 function FormularioCadastro() {
+  let nome = "";
   return (
-    <form>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        console.log(nome);
+      }}
+    >
       <TextField
+        onChange={(event) => {
+          nome = event.target.value;
+        }}
         id="nome"
         label="Nome"
         variant="outlined"
